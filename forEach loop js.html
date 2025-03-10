@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array All Value in show in forEach loop</h1>
+    <h2>Three Mathods in js</h2>
+    <script>
+        //This is the original methods in js all value show in forEach loop//
+        //This is the First one method //
+let a = ['Ahmad', "Mahmood",90, "Karim"];
+a.forEach(loop)
+function loop(value, index){
+    document.write(index + "-"+ " " +value+ "<br>");
+}
+//This is the second method in js//
+let a = ['Ahmad', "Mahmood",90, "Karim"];
+a.forEach(function(value,index){
+    document.write(index + "-" + value + "<br>");
+})
+ 
+//This is the third method in js//
+let a = ['Ahmad', "Mahmood",90, "Karim"];
+for(let i=0; i<a.length; i++){
+    document.write(a[i]+ "<br>");
+}
+
+    </script>
+    <h1>Result</h1>
+    <p>0 - Ahmad</p>
+    <p>1 - Mahmood</p>
+    <p>2 - 90</p>
+    <p>0 - Karim</p>
+
+</body>
+</html>
